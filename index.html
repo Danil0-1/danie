@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dany</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <img src="dany.jpg" alt="Dany" class="profile-pic">
+    <h1>Dany</h1>
+    <p class="age">17 años</p>
+
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@st4rdanii2" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/beardanii/" target="_blank">Instagram</a>
+    </div>
+
+    <div class="audio-player">
+      <img src="portada.jpg" alt="Portada" class="cover">
+      
+      <div class="player-controls">
+        <audio id="audio" src="ppc.mp3"></audio>
+        <div class="top">
+          <button id="playPause">▶️</button>
+          <span id="current">0:00</span> / <span id="duration">0:00</span>
+        </div>
+        <input type="range" id="progress" value="0" step="1">
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="cumpleaños-box">
+    <p>🎂 ¿Dany cuando cumple años?</p>
+    <input type="text" id="respuesta" placeholder="Ej: 1 de enero" />
+    <button onclick="verificarCumple()">Responder</button>
+    <div id="resultado"></div>
+  </div>
+
+  <div class="pregunta-box">
+    <p>🐶 ¿Como se llama el perro de Dany?</p>
+    <input type="text" id="perro" placeholder="Ej: Danilo" />
+    <button onclick="verificarPerro()">Responder</button>
+    <div id="resultado-perro"></div>
+  </div>
+
+  <div class="pregunta-box">
+    <p>🎨 ¿Cual es el color favorito de Dany?</p>
+    <input type="text" id="color" placeholder="Ej: rosa" />
+    <button onclick="verificarColor()">Responder</button>
+    <div id="resultado-color"></div>
+  </div>
+</div>
+
+  <canvas id="rosas"></canvas>
+  <script src="rosas.js"></script>
+  <script src="player.js"></script>
+  <script src="cumpleaños.js"></script>
+
+</body>
+</html>
