@@ -39,6 +39,7 @@ body {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid pink;
+    margin-top: 30px; 
     margin-bottom: 10px;
 }
 
