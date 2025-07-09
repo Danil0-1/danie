@@ -36,7 +36,7 @@ function verificarPerro() {
   const respuesta = document.getElementById("perro").value.trim().toLowerCase();
   const resultado = document.getElementById("resultado-perro");
 
-  if (respuesta === "kitty" || respuesta === "danilo" || respuesta === "Danilo") {
+  if (respuesta === "katty" || respuesta === "danilo" || respuesta === "Danilo") {
     resultado.innerHTML = `<p style="color:#c0ffcc;">Si, el perro se llama asi </p>`;
   } else {
     resultado.innerHTML = `<p style="color: #ffcdd2;">No, su perro no se llama asi jasdhf</p>`;
