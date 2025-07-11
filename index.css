@@ -269,3 +269,51 @@ canvas#rosas {
   color: #ffccdd;
   font-size: 1.2em;
 }
+
+.polaroid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.polaroid-card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  width: 80%;
+  max-width: 280px;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.polaroid-card:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.imagen-polaroid {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.leyenda {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #ff69b4;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.polaroid-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.polaroid-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
