@@ -53,3 +53,37 @@ function verificarColor() {
     resultado.innerHTML = `<p style="color: #ffcdd2;">Ese no es su color favorito 😔</p>`;
   }
 }
+
+function verificarNombre() {
+  const respuesta = document.getElementById("nombre").value.trim().toLowerCase();
+  const resultado = document.getElementById("resultado-nombre");
+
+  if (/^dayerli daniela galue zambrano$/.test(respuesta)) {
+    resultado.innerHTML = `<p style="color:#c0ffcc;">Si, ese es su nombre completo </p>`;
+  } else {
+    resultado.innerHTML = `<p style="color: #ffcdd2;">Ese no es su nombre completo 😞</p>`;
+  }
+}
+
+function verificarNacimiento() {
+  const respuesta = document.getElementById("nacimiento").value.trim().toLowerCase();
+  const resultado = document.getElementById("resultado-nacimiento");
+
+  const horaValida = /^(12:30\s?(am)?|12:30\s?(de la mañana))$/;
+
+  if (horaValida.test(respuesta)) {
+    resultado.innerHTML = `<p style="color:#c0ffcc;">Si, Dany nacio a las 12:30 de la mañana </p>`;
+  } else {
+    resultado.innerHTML = `<p style="color: #ffcdd2;">Esa no es la hora que nacio dany 😞</p>`;
+  }
+}
+
+function responderHospitalPrivado(opcion) {
+  const respuesta = document.getElementById("respuesta-hospital");
+
+  if (opcion === "si") {
+    respuesta.innerHTML = `<p style="color:#c0ffcc;">Si, Dany nacio en un hospital privado </p>`;
+  } else {
+    respuesta.innerHTML = `<p style="color:#ffcdd2;">Uy no que asco 🤮</p>`;
+  }
+}

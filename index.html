@@ -52,12 +52,47 @@
     <button onclick="verificarColor()">Responder</button>
     <div id="resultado-color"></div>
   </div>
+
+  <div class="pregunta-box">
+    <p>🤷🏻 ¿Cual es el nombre completo de Dany?</p>
+    <input type="text" id="nombre" placeholder="Ej: Maria Daniela Muskus Tarazona" />
+    <button onclick="verificarNombre()">Responder</button>
+    <div id="resultado-nombre"></div>
+  </div>
+
+  <div class="pregunta-box">
+    <p>🤷🏻 ¿ A que hora nacio Dany ?</p>
+    <input type="text" id="nacimiento" placeholder="Ej: 2 AM" />
+    <button onclick="verificarNacimiento()">Responder</button>
+    <div id="resultado-nacimiento"></div>
+  </div>
+
+<div class="pregunta-box">
+  <p>🤷🏻 ¿Dany nacio en un hospital privado?</p>
+  <button onclick="responderHospitalPrivado('si')">Si</button>
+  <button onclick="responderHospitalPrivado('no')">No</button>
+  <div id="respuesta-hospital"></div>
+</div>
+
+
+</div>
+
+<div class="rompecabezas-box">
+  <button onclick="mostrarRompecabezas()">Armar Rompecabezas</button>
+  <div id="puzzle-section" style="display:none;">
+    <h2>Rompecabezas para Dany 🫶🏻</h2>
+    <p>Arma este Rompecabezas</p>
+    <div id="puzzle-container"></div>
+    <p id="mensajeFinal"></p>
+  </div>
+
+
 </div>
 
   <canvas id="rosas"></canvas>
   <script src="rosas.js"></script>
   <script src="player.js"></script>
   <script src="cumpleaños.js"></script>
-
+  <script src="rompecabezas.js"></script>
 </body>
 </html>

@@ -229,3 +229,43 @@ canvas#rosas {
 .pregunta-box button:hover {
   background-color: #ff78aa;
 }
+
+.rompecabezas-box {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.rompecabezas-box button {
+  background-color: hotpink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#puzzle-container {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  border: 3px solid hotpink;
+}
+
+.piece {
+  background-image: url('./rompecabezas.jpg');
+  background-size: 300px 300px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#mensajeFinal {
+  margin-top: 20px;
+  color: #ffccdd;
+  font-size: 1.2em;
+}
